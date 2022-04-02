@@ -1,0 +1,60 @@
+/* Esconde o input */
+input[type='file'] {
+  display: none
+  }  
+  body {
+    background-color: rgb(100, 90, 90);
+  }
+  #centralizar{ 
+    position:absolute;
+    top:13%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }    
+    /* Aparência que terá o seletor de arquivo */
+    label {
+      background-color: #3398db;
+      border-radius: 10px;
+      color: #fff;
+      cursor: pointer;
+      margin: 100px;
+      padding: 24px 40px;
+      font-family: 'Open Sans', sans-serif;    
+      font-weight: 300;
+      font-size: 20px;    
+    }
+#texto-titulo {    
+  background: rgb(95, 94, 91);  
+  font-size: 20px;
+  color: #fff;
+  }  
+#texto {  
+  background: rgb(95, 94, 91);
+  font-size: 22px;
+  color: #fff;
+  margin: 85px;
+}   
+#obs {  
+  background: rgb(95, 94, 91);
+  font-size: 22px;
+  color: #fff;
+  margin: 85px;
+}  
+#info {  
+  background: rgb(95, 94, 91);
+  font-size: 22px;
+  color: #fff;
+  margin: 85px;
+}  
+.rodape {
+    text-align: center;
+    background-color: #000000;
+    color: #F2FFFC;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-left:-16px;
+    opacity: 0.80;
+    box-sizing: border-box;
+  }
