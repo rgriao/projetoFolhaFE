@@ -4,13 +4,13 @@ import ReceberFolha from "./components/ComponentePrincipal";
 
 function App () {
 
-return (  
-  <>    
+return (        
+    <body>
     <div id="centralizar">
-      <label htmlFor='selecao-arquivo'>Selecione o arquivo txt &#187;</label>
-      <input id='selecao-arquivo' type='file' onChange={(e) => ReceberFolha(e)} />
-    </div>   
-    <div id="texto-titulo">
+    <label htmlFor='selecao-arquivo'>Selecione o arquivo txt &#187;</label>
+    <input id='selecao-arquivo' type='file' onChange={(e) => ReceberFolha(e)} />
+  </div>
+  <div id="texto-titulo">
       <h1>Gerador de Arquivo CNAB240 no Padrão FEBRABAN 240 Posições</h1>
     </div>
     <div id="texto">
@@ -40,8 +40,8 @@ return (
         Sigla do Estado(2); Agência do Funcionário(5); Dígito da Agência(1); Número da Conta(12); Dígito da Conta(1);
         Digito Verificador da Agência(1); Data do Pagamento(8); Valor do Pagamento(15);
       </p>
-      </div>
-      <div id="obs">
+    </div>
+    <div id="obs">
       <h2>Observações:</h2>
       <ol>
         <li>O Código (nº do Convênio) o Banco deverá fornecer.</li>
@@ -61,8 +61,8 @@ return (
         <li>Todos os caracteres devem ser maiúsculos e aconselha-se a não utilização de caracteres especiais (ex.:
           “Ç”, “?”, etc.) e acentuação gráfica (ex.: “Á”, “É”, “Ê”, etc).</li>
       </ol>
-      </div>
-      <div id="info">
+    </div>
+    <div id="info">
       <h2>Informações Gerais:</h2>
       <p>
         Não nos responsabilizamos por qualquer erro provocado por falhas no arquivo disponibilizado ao sistema ou outro qualquer.
@@ -70,14 +70,13 @@ return (
         O uso deste sistema será gratuito por prazo indeterminado, podendo ser alterada esta política a qualquer tempo e sem prévio aviso!
       </p>
     </div>
-  <footer className="rodape">
+    <footer className="rodape">
       &copy; Todos os direitos reservados - 3R Sistemas de Informática - 2022
-  </footer>
-  </>  
-)
+    </footer>
+    </body>
+    )
 }
 ReactDOM.render(
     <App />,
-    document.getElementById('root')
-    
+    document.getElementById('root')    
   );
