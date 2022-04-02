@@ -4,7 +4,7 @@
   "private": true,
   "main": "./src/index.jsx",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "webpack",
     "dev": "webpack",
     "build": "webpack --mode production"
   },
