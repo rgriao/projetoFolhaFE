@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,  
   "scripts": {
-    "start": "node index.jsx",
+    "start": "react-scripts start",
     "dev": "webpack",
     "build": "webpack --mode production"
   },
