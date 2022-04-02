@@ -1,10 +1,9 @@
 {
   "name": "cnab240",
   "version": "0.1.0",
-  "private": true,
-  "main": "./src/index.jsx",
+  "private": true,  
   "scripts": {
-    "start": "node index.js",
+    "start": "node index.jsx",
     "dev": "webpack",
     "build": "webpack --mode production"
   },
