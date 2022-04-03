@@ -4,13 +4,9 @@ import ReceberFolha from "./components/ComponentePrincipal";
 
 function AppCNAB240 () {
 
-return (        
-
-    <footer className="rodape">
-      &copy; Todos os direitos reservados - 3R Sistemas de Informática - 2022
-    </footer>
-
-    )
+return (    
+  x=1    
+)
 }
 ReactDOM.render(
     <AppCNAB240 />,
