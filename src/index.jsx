@@ -5,7 +5,7 @@ import ReceberFolha from "./components/ComponentePrincipal";
 function App () {
 
 return (        
-    <body>
+<body>
     <div id="centralizar">
     <label htmlFor='selecao-arquivo'>Selecione o arquivo txt &#187;</label>
     <input id='selecao-arquivo' type='file' onChange={(e) => ReceberFolha(e)} />
@@ -73,7 +73,7 @@ return (
     <footer className="rodape">
       &copy; Todos os direitos reservados - 3R Sistemas de Informática - 2022
     </footer>
-    </body>
+</body>
     )
 }
 ReactDOM.render(
