@@ -1,1 +1,1 @@
-web:node index.jsx 
+web: bundle exec rails server -p $PORT
