@@ -69,6 +69,9 @@ return (
         O uso deste sistema será gratuito por prazo indeterminado, podendo ser alterada esta política a qualquer tempo e sem prévio aviso!
       </p>
     </div>
+    <footer className="rodape">
+      &copy; Todos os direitos reservados - 3R Sistemas de Informática - 2022
+    </footer>
 </body>
 )
 }
