@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import ReceberFolha from "./components/ComponentePrincipal";
 
-function App () {
+function AppCNAB240 () {
 
 return (        
 <body>
@@ -77,6 +77,6 @@ return (
     )
 }
 ReactDOM.render(
-    <App />,
+    <AppCNAB240 />,
     document.getElementById('root')    
   );
