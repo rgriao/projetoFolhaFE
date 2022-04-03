@@ -64,6 +64,7 @@ return (
     <div id="info">
       <h2>Informações Gerais:</h2>
       <p>
+        Após clicar no botão e gerar seu arquivo, há necessidade de atualizar a página para usar novamente!
         Não nos responsabilizamos por qualquer erro provocado por falhas no arquivo disponibilizado ao sistema ou outro qualquer.
         Contato para críticas/sugestões pelo e-mail: r_griao@hotmail.com ou pelo e-mail: rodolfopgriao@gmail.com.
         O uso deste sistema será gratuito por prazo indeterminado, podendo ser alterada esta política a qualquer tempo e sem prévio aviso!
