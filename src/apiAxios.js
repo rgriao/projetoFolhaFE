@@ -9,7 +9,7 @@ axios.create abaixo cria uma configuração personalizada
 */
 const instanciaAxios = axios.create({
 
-  //baseURL: "http://localhost:8080",//PODERIA SER DE UM SERVIDOR REAL DA INTERNET
+  //baseURL: "http://localhost:8080",
   baseURL: "https://cnab240folhadepagamentoserver.herokuapp.com/",
   headers: {
     'Content-type': 'application/json'//na remessa dos dados
