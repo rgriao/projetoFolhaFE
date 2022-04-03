@@ -5,7 +5,7 @@ export function downTxtFile(txtfinal) {
     var blobObj;
 
       geraTxtFinal.text().then(text => {      
-      text   = text.replace(/(,)+/g,"");        
+      text   = text.replace(/(,)+/g,"").toUpperCase();        
       blobObj = new Blob([text]);      
       const element = document.createElement("a");
       element.href = URL.createObjectURL(blobObj);
