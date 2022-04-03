@@ -57,14 +57,16 @@ return (
         <li>Siga rigorosamente o exemplo fictício acima.</li>
         <li>Após a conferência de seu arquivo, clique no botão abaixo e aguarde a geração automática do download.</li>
         <li>De posse do arquivo final gerado, confira-o e importe-o para o seu banco.</li>
-        <li>Todos os caracteres devem ser maiúsculos e aconselha-se a não utilização de caracteres especiais (ex.:
+        <li>Na confecção do arquivo não poderá haver caracteres especiais (ex.:
           “Ç”, “?”, etc.) e acentuação gráfica (ex.: “Á”, “É”, “Ê”, etc).</li>
       </ol>
     </div>
     <div id="info">
       <h2>Informações Gerais:</h2>
       <p>
-        Após clicar no botão e gerar seu arquivo, há necessidade de atualizar a página para usar novamente!
+        Garantimos que nenhuma informação prestada pelo usuário ficará armazenada no Banco de Dados. Assim, a sua folha de pagamento
+        é adicionada e deletada do servidor, logo após a geração do arquivo final pelo sistema. PORTANTO, NÃO ARMAZENAMOS INFORMAÇÃO ALGUMA.
+        Após clicar no botão e gerar seu arquivo, há necessidade de atualizar a página para usá-la novamente!
         Não nos responsabilizamos por qualquer erro provocado por falhas no arquivo disponibilizado ao sistema ou outro qualquer.
         Contato para críticas/sugestões pelo e-mail: r_griao@hotmail.com ou pelo e-mail: rodolfopgriao@gmail.com.
         O uso deste sistema será gratuito por prazo indeterminado, podendo ser alterada esta política a qualquer tempo e sem prévio aviso!
