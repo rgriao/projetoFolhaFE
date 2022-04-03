@@ -2,7 +2,7 @@
   "name": "cnab240",
   "version": "0.1.0",
   "private": true,
-  "main": "./src/index.jsx",
+  "main": "./src/index",
   "scripts": {
     "start": "react-scripts start",
     "dev": "webpack",
