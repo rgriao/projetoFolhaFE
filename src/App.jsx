@@ -6,9 +6,10 @@ import Rodape from "./components/Rodape";
 import instanciaAxios from "./apiAxios";
 
 class App extends Component { 
-    state = {
-        contador: ""
-    }
+  constructor(props) {
+    super(props);
+    this.state = {contador: ""};
+  }
 async componentDidMount() {
     instanciaAxios.get('/conta').then(resp => {             
         if (resp.data.contador){    
@@ -18,13 +19,10 @@ async componentDidMount() {
       });  
     }
     render() {      
-      return (      
-        <>
-        <BotaoFolha />        
-        <Corpo />   
-        <ContadorVisitantes cont={this.state.contador}/>        
-        <Rodape />
-        </>  
+      return (     
+        
+        <body><BotaoFolha /><Corpo /><ContadorVisitantes cont={this.state.contador} /><Rodape /></body>
+          
       );      
       }
 }

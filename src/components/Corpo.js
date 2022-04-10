@@ -2,7 +2,7 @@ import React from "react";
 
 function Corpo () { 
   return (
-    <>          
+    <body>          
       <div id="texto-titulo">
           <h1>Gerador de Arquivo CNAB240 no Padrão FEBRABAN 240 Posições</h1>
         </div>
@@ -66,7 +66,7 @@ function Corpo () {
             O uso deste sistema será gratuito por prazo indeterminado, podendo ser alterada esta política a qualquer tempo e sem prévio aviso!
           </p>    
         </div>
-    </>
+    </body>
   )    
 }
 export default Corpo;
