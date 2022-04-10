@@ -19,9 +19,9 @@ input[type='file'] {
   }
 #centralizar { 
   position:absolute;
-  top:13%;
-  left:50%;
-  transform: translate(-50%, -50%);
+  top:15%;
+  left:58%;
+  
   }       
 #texto-titulo {    
   background: rgb(95, 94, 91);  
@@ -45,7 +45,13 @@ input[type='file'] {
   font-size: 22px;
   color: #fff;
   margin: 85px;
-}  
+} 
+#contador {  
+  background: rgb(95, 94, 91);
+  font-size: 22px;
+  color: #fff;
+  margin: 85px;
+} 
 .rodape {
   text-align: center;
   background-color: #000000;
@@ -54,7 +60,7 @@ input[type='file'] {
   position: fixed;
   bottom: 0;
   width: 100%;
-  margin-left:-16px;
+  margin-left:-8px;
   opacity: 0.80;
   box-sizing: border-box;
 }

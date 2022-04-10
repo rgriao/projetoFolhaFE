@@ -1,5 +1,3 @@
-//import React from 'react';
-//import { Route } from "react-router-dom";
 import dataService from "../services/apiservice";
 
 function ReceberFolha (e) {
@@ -86,19 +84,10 @@ function ReceberFolha (e) {
         var bodyTransfEmObjetos = [];
         for (var i = 0; i < dados.length; i++) {
           bodyTransfEmObjetos.push(Object.fromEntries(dados[i]));
-        }
-        //console.log(bodyTransfEmObjetos);
+        }        
         return bodyTransfEmObjetos;
       }
-
-      //envia os registros transformados em objetos para o banco de dados
-      //const mesagem  = () => {
-      //dataService.findAll();
-      dataService.bulkCreate(TransfEmObjetos());
-      //dataService.getTextFinal(); //bulkCreate     
-      //alert(mesagem);     
-      //} 
-      //console.log(mesagem("oia"));
+      dataService.bulkCreate(TransfEmObjetos());       
     }
     if (file) {
       reader.readAsText(file);
