@@ -19,10 +19,13 @@ async componentDidMount() {
       });  
     }
     render() {      
-      return (     
-        
-        <body><BotaoFolha /><Corpo /><ContadorVisitantes cont={this.state.contador} /><Rodape /></body>
-          
+      return (             
+        <body>
+          <BotaoFolha />
+          <Corpo />
+          <ContadorVisitantes cont={this.state.contador} />
+          <Rodape />
+        </body>          
       );      
       }
 }

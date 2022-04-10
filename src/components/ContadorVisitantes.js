@@ -4,9 +4,9 @@ function ContadorVisitantes (props) {
   return (
     <body>
       <div id="contador">    
-      <h1>Contador de Usuários</h1>
+      <h3>CONTADOR DE USUÁRIOS</h3>
         <h3>
-          A quantidade de usuários que gerou o arquivo CNAB240, até o dia de hoje, é de: { props.cont } 
+          A quantidade que gerou o arquivo CNAB240, até o dia de hoje, é de { props.cont } de usuários!
         </h3>
       </div>
     </body>
