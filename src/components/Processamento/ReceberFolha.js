@@ -1,7 +1,6 @@
-import dataService from "../services/apiservice";
+import dataService from "../../services/apiservice";
 
-function ReceberFolha (e) {
-
+function ReceberFolha (e) {  
   var camposTabelaFolha = [
     //informações da empresa
     "nomedobanco",
@@ -87,6 +86,7 @@ function ReceberFolha (e) {
         }        
         return bodyTransfEmObjetos;
       }
+      
       dataService.bulkCreate(TransfEmObjetos());       
     }
     if (file) {

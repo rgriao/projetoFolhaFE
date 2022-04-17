@@ -1,6 +1,7 @@
 var path = require('path');
 
 module.exports = {
+        
     mode: "production",
     entry: './src/index.jsx',
     output: {
@@ -9,11 +10,17 @@ module.exports = {
     },
     module: {
         rules: [
-            {                      
+            {          
+                test: /\.css$/,
+                exclude: /node_modules/,
+                use: {loader: "style-loader", loader: "css-loader"}
+            },
+            {
                 test: /\.(jpe?g|gif|png|ico)$/,
                 exclude: [/node_modules/],
                 use: ['file-loader?name=[name].[ext]'],
-
+            },
+            {
                 test: /\.(js|jsx)$/,
                 exclude: [/node_modules/],
                 use: {
