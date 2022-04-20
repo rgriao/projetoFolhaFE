@@ -18,8 +18,7 @@ render() {
                 forem feitos com débito em conta corrente da empresa deverá conter o número 1.</li>
                 <li>Se em um campo não existir o dado, então deixar apenas um espaço em branco entre os pontos e vírgulas, assim ; ;</li>
                 <li>Após a menção do valor do último registro da folha (última linha), sempre
-                DEVERÁ FICAR SÓ COM O VALOR SEM O ";". Ficanco assim a última linha: Digito Verificador da Agência(1);
-                Data do Pagamento(8); Valor do Pagamento(15) As linhas anteriores à última deverão terminar sempre com ponto e vírgula.</li>
+                DEVERÁ FICAR SÓ COM O VALOR DO PAGAMENTO SEM O ";". Mas as linhas anteriores à última deverão sempre terminar com ponto e vírgula.</li>
                 <li>Os dois últimos dígitos do valor do pagamento corresponderão aos centavos (NÃO coloque vírgula para separá-los). Veja o exemplo acima
                 que corresponde a R$ 2.340,00 (234000).</li>
                 <li>Siga rigorosamente a formatação do exemplo fictício acima.</li>

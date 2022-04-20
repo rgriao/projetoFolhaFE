@@ -20,7 +20,9 @@ render() {
           <p>
             Banco do Brasil;001;Brasuca Eireli;00000000000000;Rua das Neves;23;predio;Araraponga;14800;189;SP;1;45555599999;
             6918;3;15759;7; ;Maria da Silva Pires;30990294891125;Rua Sonia;514;casa;perdizes;Araraponga;14814;520;SP;6900;3;18499;
-            1; ;18102021;234000;
+            1; ;18102021;234000; 
+            <br />
+            Atente-se que a última linha da folha não poderá terminar com ";"
           </p>
           <p>
             Desta forma, os campos do arquivo (e a quantidade MÁXIMA de caracteres em cada campo) são:

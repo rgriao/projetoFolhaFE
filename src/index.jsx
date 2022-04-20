@@ -74,7 +74,7 @@ class App extends Component {
         return(
   <Fragment>
         <div className="Titulo">
-          <h1>Gerador de Arquivo CNAB240 no Padrão FEBRABAN 240 Posições</h1>
+          <h1>Gerador de Arquivo CNAB240 (folha de pagamento) no Padrão FEBRABAN 240 Posições</h1>
         </div>                    
            <BotaoFolha />  
            <div className="InformacaoInicial">  
