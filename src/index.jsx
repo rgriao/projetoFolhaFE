@@ -14,8 +14,8 @@ import instanciaAxios from "./apiAxios";
 import * as serviceWorker from "./serviceWorker";
 import {Auth0Provider} from '@auth0/auth0-react';
 
-const domain = process.env.REACT_APP_AUTH0_DOMAIN
-const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID
+const Domain = process.env.Domain
+const Client_ID = process.env.Client_ID
 
 var textInicial = ["Prezado usuário, antes de selecionar o seu arquivo txt, o qual deverá conter os dados de uma folha de pagamento de salários,",
        " é necessário inteirar-se das orientações existentes nos cards laterais desta página, clicando nos botões 'Queira verificar'.",
@@ -84,7 +84,7 @@ class App extends Component {
         <Profile/>
      </div>
         <div className="Titulo">
-        <h1>Gerador de Arquivo CNAB240 (folha de pagamento) no Padrão FEBRABAN 240 Posições</h1>
+        
         </div>                    
            <BotaoFolha />  
            <div className="InformacaoInicial">  
@@ -135,12 +135,11 @@ class App extends Component {
   )                 
   }
 }
-
 ReactDOM.render(
   <Auth0Provider
-    domain={domain}
-    clientId={clientId}
-    redirectUri={window.location.origin}
+    Domain={Domain}
+    Client_ID={Client_ID}
+    RedirectUri={window.location.origin}
   >
     <App />
   </Auth0Provider>,

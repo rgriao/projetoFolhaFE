@@ -3,10 +3,10 @@ import styled from 'styled-components';
 export const ButtonLogin = styled.button`
 background: #a2d7a9;
 color: #000;
-margin-right: 30rem;
-padding: .7rem 1.2rem;
+margin-right: 50rem;
+padding: .7rem 1.5rem;
 font-size: .9rem;
-border-radius: 4px;
+border-radius: 8px;
 border: none;
 cursor: pointer;
 `
