@@ -2,7 +2,9 @@ import "./index.css"
 import "./components/Layout/card.css"
 import React, { Component, Fragment } from "react";
 import ReactDOM from "react-dom";
-import BotaoFolha from "./components/Controles/BotaoFolha";
+import BotaoFolha from "./components/Controles/BotaoFolha.jsx";
+import Navbar from './components/Controles/Navbar.jsx'; 
+import Profile from "./components/Controles/Profile.jsx";
 import Caracteristicas from "./components/Marcação/Caracteristicas";
 import Observacoes from "./components/Marcação/Observacoes";
 import Informacoes from "./components/Marcação/Informacoes";
@@ -10,6 +12,10 @@ import Politicas from "./components/Marcação/Politicas";
 import Rodape from "./components/Marcação/Rodape";
 import instanciaAxios from "./apiAxios"; 
 import * as serviceWorker from "./serviceWorker";
+import {Auth0Provider} from '@auth0/auth0-react';
+
+const Domain = process.env.Domain
+const Client_ID = process.env.Client_ID
 
 var textInicial = ["Prezado usuário, antes de selecionar o seu arquivo txt, o qual deverá conter os dados de uma folha de pagamento de salários,",
        " é necessário inteirar-se das orientações existentes nos cards laterais desta página, clicando nos botões 'Queira verificar'.",
@@ -73,8 +79,12 @@ class App extends Component {
   render() {
         return(
   <Fragment>
+    <div>
+     <Navbar/>    
+        <Profile/>
+     </div>
         <div className="Titulo">
-          <h1>Gerador de Arquivo CNAB240 (folha de pagamento) no Padrão FEBRABAN 240 Posições</h1>
+        
         </div>                    
            <BotaoFolha />  
            <div className="InformacaoInicial">  
@@ -83,6 +93,7 @@ class App extends Component {
            <div className="Card">         
              <div className="Caracter">
                 <h2>Características do arquivo</h2> 
+                
                 <button onClick={this.onClickCaract.bind(this)}>Queira verificar!</button >
              </div> 
             </div>
@@ -92,6 +103,7 @@ class App extends Component {
            <div className="Card">         
               <div className="Observacoes">
                 <h2>Observações importantes</h2>
+
                 <button onClick={this.onClickObs.bind(this)}>Queira verificar!</button >                 
               </div>  
            </div>  
@@ -123,9 +135,15 @@ class App extends Component {
   )                 
   }
 }
-ReactDOM.render( 
-      <App />,      
-      document.getElementById("root")
-    );
+ReactDOM.render(
+  <Auth0Provider
+    Domain={Domain}
+    Client_ID={Client_ID}
+    RedirectUri={window.location.origin}
+  >
+    <App />
+  </Auth0Provider>,
+  document.getElementById('root')
+);
 serviceWorker.unregister();
 export default App;
